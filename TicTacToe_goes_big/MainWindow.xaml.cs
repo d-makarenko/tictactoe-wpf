@@ -57,6 +57,8 @@ namespace TicTacToe_goes_big
         public Board () {
             m_cells = new ObservableCollection<BoardCell>(Enumerable.Range(0, 20 * 20).Select(i => new BoardCell()));
         }
+
+
         // Количество строк и столбцов
         public int Rows { get; set; }
         public int Columns { get; set; }
